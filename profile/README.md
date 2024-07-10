@@ -12,7 +12,7 @@ officially part of the SPHEREx pipeline yet, as well as student projects. It is 
 [Questions to answer
 1. Log-normal simulations + estimators: how they are connected to other repos in here
 2. SFB code: what are the different SFB code? Theory code, estimator code? 
-3. Which repos are obsolete, LogNormalSimulations is a continuation of some other repo?
+3. Which repos are obsolete, LogNormalSimulations is a continuation of ComparisonModelingSimulation?
 4. Julia registry repo and how it's used? How and which repo is connected to the SPHEREx Pipeline.
 5. Which repos are experimental and decoupled from the pipeline (e.g. SURF2024Window for Dennis Wu's SURF project).
 ]

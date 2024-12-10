@@ -7,15 +7,22 @@ officially part of the SPHEREx pipeline yet, as well as student projects. It is 
 
 ## Repo organizations 
 
-[A description of various repos go here]
+There are essentially two types of repos: projects and packages.
 
-[Questions to answer
-1. Log-normal simulations + estimators: how they are connected to other repos in here
-2. SFB code: what are the different SFB code? Theory code, estimator code? 
-3. Which repos are obsolete, LogNormalSimulations is a continuation of ComparisonModelingSimulation?
-4. Julia registry repo and how it's used? How and which repo is connected to the SPHEREx Pipeline.
-5. Which repos are experimental and decoupled from the pipeline (e.g. SURF2024Window for Dennis Wu's SURF project).
-]
+All Julia packages end in `.jl` and projects don't.
+
+### Packages
+Julia packages end in `.jl`, they get registered in the `WATCosmologyJuliaRegistry` as a Julia registry so that it is convenient to use in projects. A Julia registry is similar to a conda channel. The most up-to-date documentation how to use the registry is in [LogNormalSimulations](https://github.com/Wide-Angle-Team/LogNormalSimulations).
+
+`WATCosmologyJuliaLib` is a repo that contains several packages. Each subdirectory is its own Julia package. We combine them in one repo so as not to pollute the github organization. They individually registered in the `WATCosmologyJuliaRegistry`.
+
+SFB code: Estimator code lives in `SphericalFourierBesselDecompositions-dev` and the public version in [SphericalFourierBesselDecompositions.jl](https://github.com/hsgg/SphericalFourierBesselDecompositions.jl), the theory code lives in `WATCosmologyJuliaLib/SFBPsiPhiModels`.
+
+### Projects
+These repos bring together several packages to run code and make plots for papers.
+
+The most important one is `LogNormalSimulations` that connects the `LogNormalGalaxies.jl` code with the `MeasurePowerSpectra.jl` code, and it is used to run a bunch of such simulations.
+
 
 ## Entry Points
 

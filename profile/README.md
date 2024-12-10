@@ -7,16 +7,14 @@ officially part of the SPHEREx pipeline yet, as well as student projects. It is 
 
 ## Repo organizations 
 
-There are essentially two types of repos: projects and packages.
-
-All Julia packages end in `.jl` and projects don't.
+There are essentially two types of repos: projects and packages. Projects don't end with '.jl' while julia packages do. The only exceptions are `WATCosmologyJuliaLib` which contains a collection of julia packages, and `WATCosmologyJuliaRegistry` which registers the packages for easy installation. 
 
 ### Packages
 Julia packages end in `.jl`, they get registered in the `WATCosmologyJuliaRegistry` as a Julia registry so that it is convenient to use in projects. A Julia registry is similar to a conda channel. The most up-to-date documentation how to use the registry is in [LogNormalSimulations](https://github.com/Wide-Angle-Team/LogNormalSimulations).
 
 `WATCosmologyJuliaLib` is a repo that contains several packages. Each subdirectory is its own Julia package. We combine them in one repo so as not to pollute the github organization. They individually registered in the `WATCosmologyJuliaRegistry`.
 
-SFB code: Estimator code lives in `SphericalFourierBesselDecompositions-dev` and the public version in [SphericalFourierBesselDecompositions.jl](https://github.com/hsgg/SphericalFourierBesselDecompositions.jl), the theory code lives in `WATCosmologyJuliaLib/SFBPsiPhiModels`.
+SFB code: Estimator code lives in `SphericalFourierBesselDecompositions-dev` (this doesn't end in .jl yet since it's dev mode) and the public version in [SphericalFourierBesselDecompositions.jl](https://github.com/hsgg/SphericalFourierBesselDecompositions.jl), the theory code lives in `WATCosmologyJuliaLib/SFBPsiPhiModels`.
 
 ### Projects
 These repos bring together several packages to run code and make plots for papers.
